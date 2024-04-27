@@ -3,11 +3,12 @@
   become: Yes
   tasks: 
     -name: install apache
-     ansible.builtin.dnf
+     ansible.builtin.dnf:
         name: apache
         state: latest
     -name: Run apache
-     ansible.builtin.service
+     ansible.builtin.service:
         name: apache
         state: start
+        enabled: yes
 
