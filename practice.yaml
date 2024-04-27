@@ -1,0 +1,13 @@
+- name: install and run apache
+  hosts: web
+  become: Yes
+  tasks: 
+    -name: install apache
+     ansible.builtin.dnf
+       name: apache
+       state: latest
+    -name: Run apache
+    ansible.builtin.service
+       name: apache
+       state: start
+       
