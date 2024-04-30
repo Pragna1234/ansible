@@ -1,6 +1,8 @@
 - name: variables from inventory file
   hosts: localhost
+  vars_
   tasks: 
    - name: Declaring Variables
      ansible.builtin.debug:
       msg: "I am from {{country}}, i live in {{city}}, we have a {{age}} year old daughter"
+      Religion is : {{religion}}
