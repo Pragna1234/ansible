@@ -15,4 +15,4 @@
   tasks: 
    - name: Declaring Variables
      ansible.builtin.debug:
-      msg: "course: {{course}}, Tools covered: {{Tools}}, Experience is: {{Experience}} and  Realtime project: {{RealTime}}
+      msg: "course: {{course}}, Tools covered: {{Tools}}, Experience is: {{Experience}} and  Realtime project: {{RealTime}}"
