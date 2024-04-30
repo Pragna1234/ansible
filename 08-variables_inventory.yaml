@@ -1,7 +1,7 @@
 - name: variables from inventory file
   hosts: localhost
   vars:
-   Religion: "Hindu"
+   religion: "Hindu"
   tasks: 
    - name: Declaring Variables
      ansible.builtin.debug:
