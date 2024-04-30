@@ -1,0 +1,6 @@
+- name: variables
+  hosts: localhost
+  tasks: 
+   - name: Declaring Variables
+     ansible.builtin.debug:
+      msg: "I am from India, i live in seattle, we have a daughter"
