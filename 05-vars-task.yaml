@@ -5,13 +5,13 @@
    city: "Seattle"
    age: "5"
   tasks: 
-   - name: Print override info
-     vars:
+  - name: Print override info
+    vars:
        country: "Unitedstates"
-     ansible.builtin.debug:
-      msg: "I am from {{country}}, i live in {{city}}, we have a {{age}} year old daughter"
+    ansible.builtin.debug:
+       msg: "I am from {{country}}, i live in {{city}}, we have a {{age}} year old daughter"
 
-    - name: Print information
-      ansible.builtin.debug:
+  - name: Print information
+    ansible.builtin.debug:
        msg: "I am from {{country}}, i live in {{city}}, we have a {{age}} year old daughter"
         
