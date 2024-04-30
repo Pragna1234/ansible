@@ -7,7 +7,7 @@
   tasks: 
    - name: Print override info
      vars:
-       country: United sates
+       country: "Unitedstates"
      ansible.builtin.debug:
       msg: "I am from {{country}}, i live in {{city}}, we have a {{age}} year old daughter"
 
