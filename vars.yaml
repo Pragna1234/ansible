@@ -1,4 +1,3 @@
- vars: #playlevel varaibles
-   country: "India"
-   city: "Seattle"
-   age: "5"
+country: "India"
+city: "Seattle"
+age: "5"
