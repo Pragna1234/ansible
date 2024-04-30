@@ -5,4 +5,4 @@
   tasks: 
    - name: Declaring Variables
      ansible.builtin.debug:
-      msg: "I am from {{country}}, i live in {{city}}, we have a {{age}} year old daughter,Religion is : {{religion}}
+      msg: "I am from {{country}}, i live in {{city}}, we have a {{age}} year old daughter,Religion is: {{religion}}
