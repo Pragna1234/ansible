@@ -3,13 +3,13 @@
   tasks: 
   - name: PLAY-1 and TASK-1
     ansible.builtin.debug:
-    msg: "I am from play1 and Task1"
+     msg: "I am from play1 and Task1"
 - name: Play2
   hosts: Localhost
   tasks:
   - name: Play2 and Task2
     ansible.builtin.debug:
-    msg: "I Am from play2 and task2"
+     msg: "I Am from play2 and task2"
 
    
  
