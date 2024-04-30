@@ -1,0 +1,4 @@
+ vars: #playlevel varaibles
+   country: "India"
+   city: "Seattle"
+   age: "5"

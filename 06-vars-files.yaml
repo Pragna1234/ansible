@@ -1,0 +1,8 @@
+- name: variables
+  hosts: localhost
+  vars_files: 
+  - vars.yaml
+  tasks: 
+  - name: Print information
+    ansible.builtin.debug:
+       msg: "I am from {{country}}, i live in {{city}}, we have a {{age}} year old daughter"

@@ -1,12 +1,12 @@
 - name: variables
   hosts: localhost
-  vars: 
+  vars: #playlevel varaibles
    country: "India"
    city: "Seattle"
    age: "5"
   tasks: 
   - name: Print override info
-    vars:
+    vars: #tasklevel variables
        country: "Unitedstates"
     ansible.builtin.debug:
        msg: "I am from {{country}}, i live in {{city}}, we have a {{age}} year old daughter"
