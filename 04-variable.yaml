@@ -1,6 +1,10 @@
 - name: variables
   hosts: localhost
+  vars: 
+   country: "India"
+   city: "Seattle"
+   age: "5"
   tasks: 
    - name: Declaring Variables
      ansible.builtin.debug:
-      msg: "I am from India, i live in seattle, we have a daughter"
+      msg: "I am from {{country}}, i live in {{seattle}}, we have a {{age}} year old daughter"
