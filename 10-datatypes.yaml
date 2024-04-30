@@ -1,0 +1,18 @@
+- name: variables
+  hosts: localhost
+  vars:
+   course: "Devops with AWS" #string
+   Tools: #lists
+    -Ansible
+    -shell
+    -linux
+   Experience: #map
+    Devops: 3
+    Linux: 2
+    shell: 1
+   RealTime: true #boolean
+    
+  tasks: 
+   - name: Declaring Variables
+     ansible.builtin.debug:
+      msg: "course: {{course}}, Tools covered: {{Tools}}, Experience is: {{Experience}} and  Realtime project: {{RealTime}}
