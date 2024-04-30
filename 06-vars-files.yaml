@@ -1,8 +1,14 @@
 - name: variables
   hosts: localhost
-  vars_files: 
-  - vars.yaml
+  vars_prompt:
+  - name: username
+    prompt: Please enter your username.
+    private: false
+  - name: Password
+    prompt: please enter your password.
+    private: true
+
   tasks: 
   - name: Print information
     ansible.builtin.debug:
-       msg: "I am from {{country}}, i live in {{city}}, we have a {{age}} year old daughter"
+       msg: "Hi,username is {{username}} and password {{password}}"
