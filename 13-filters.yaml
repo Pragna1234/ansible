@@ -45,7 +45,7 @@
 - name: converting dictionary to lists
   hosts: localhost
   vars:
-   my_dict:
+   my_dict: #this is map/dictonary/key pairs
     course: ansible
     Trainer: Sivakumar
     Duration: 120hrs
