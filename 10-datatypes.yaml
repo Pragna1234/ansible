@@ -1,4 +1,4 @@
-- name: variables
+- name: datatypes
   hosts: localhost
   vars:
    course: "Devops with AWS" #string
