@@ -17,7 +17,7 @@
 - name: Lowercase
   hosts: localhost
   vars:
-    greetings: "good morning" 
+    greetings: "GOOD MORNING" 
   tasks:
    - name: convert into lowercase
      ansible.builtin.debug:
