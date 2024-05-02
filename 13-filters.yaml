@@ -4,4 +4,10 @@
    - name: Declaring default variables
      ansible.builtin.debug:
       msg: "Hello  {{course | default('ansible')}}"
-      
+
+- name: Uppercase
+  hosts: localhost
+  tasks:
+   - name: convert into uppercase
+     ansible.builtin.debug:
+     msg: "{{hello ansible | upper}}"
