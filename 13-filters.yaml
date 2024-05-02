@@ -1,7 +1,6 @@
 - name: Default variable
-  hosts: localvariable
+  hosts: localhost
   tasks:
    - name: Declaring default variables
      ansible.builtin.debug:
       msg: "Hello | default{{Ansible}}"
-      
