@@ -1,0 +1,11 @@
+- name: loops
+  hosts: localhost
+  tasks:
+  - name: loops
+    ansible.builtin.user:
+     name: "{{item}}"
+     state:
+    loop:
+     - Ansible
+     - Shell
+     - linux
