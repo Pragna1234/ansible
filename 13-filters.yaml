@@ -61,9 +61,9 @@
   hosts: localhost
   vars:
    my_list:
-     {'key' : 'course', 'value' : 'ansible'}
-     {'key' : 'Trainer', 'value' : 'Sivakumar'}
-     {'key' : Duration', 'value': '120hrs'}
+    - {'key' : 'course', 'value' : 'ansible'}
+    - {'key' : 'Trainer', 'value' : 'Sivakumar'}
+    - {'key' : Duration', 'value': '120hrs'}
   tasks:
     - name: before converting to dictonary
       ansible.builtin.debug:
