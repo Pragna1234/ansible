@@ -1,10 +1,9 @@
 - name: loops
   hosts: localhost
   tasks:
-  - name: loops
-    ansible.builtin.user:
-     name: "{{item}}"
-     state:
+  - name: print names
+    ansible.builtin.debug:
+      msg: "Hello {{item}}"
     loop:
      - Ansible
      - Shell
