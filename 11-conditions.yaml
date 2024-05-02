@@ -1,4 +1,3 @@
----
 - name: conditions
   hosts: web
   become: yes
@@ -15,7 +14,7 @@
     - name: create user
       ansible.built.command: useradd expense
       when: USER.rc != 0 #condition
-      
+
     - name: print user information
       ansible.builtin.debug:
         msg: Hello
