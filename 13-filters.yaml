@@ -56,3 +56,18 @@
     - name: after converting to list
       ansible.builtin.debug:
        msg: "after converting: {{ my_dict | dict2items }}"
+
+- name: converting lists to dictonary
+  hosts: localhost
+  vars:
+   my_list:
+     [{'key' : 'course', 'value' : 'ansible'}
+     {'key' : 'Trainer', 'value' : 'Sivakumar'}
+     {'key' : Duration', 'value': '120hrs'}]
+  tasks:
+    - name: before converting to dictonary
+      ansible.builtin.debug:
+       msg: "before convert: {{ my_list}}"
+    - name: after converting to dictonary
+      ansible.builtin.debug:
+       msg: "after converting: {{ my_list | items2dict }}"
